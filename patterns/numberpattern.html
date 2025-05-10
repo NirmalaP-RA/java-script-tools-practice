@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number pattern using nested loop</title>
+</head>
+<body>
+    
+</body>
+<script>
+    for(var j=1;j<=5;j++){
+       
+    for(var i=1;i<=j;i++){
+        document.write(i);  
+    }
+    document.write('<br>');
+}
+// using nested loop
+// o/p:
+// 1
+// 12
+// 123
+// 1234
+// 12345
+for(var j=1;j<=5;j++){
+       
+       for(var i=1;i<=j;i++){
+           document.write(j);  
+       }
+       document.write('<br>');
+   }
+//    using loop
+//    o/p:
+//     1
+//     22
+//     333
+//     4444
+//     55555
+for(var j=1;j<=5;j++){
+       
+       for(var i=1;i<=j;i++){
+           document.write('*');  
+       }
+       document.write('<br>');
+   }
+//    left triangle star pattern using loop
+// o/p:
+// *
+// **
+// ***
+// ****
+// *****
+
+
+
+        for(var j=1;j<=5;j++){
+        for(s=4;s>=j;s--)  {   
+            document.write("&nbsp;&nbsp");
+            // &nbsp count two time space
+        } 
+       for(var i=1;i<=j;i++){
+           document.write('*');  
+       }
+       document.write('<br>');
+   }
+   // right triangle
+//    o/p:
+//         *
+//        **
+//       ***
+//      ****
+//     *****
+      for(var j=1;j<=5;j++){
+        for(s=4;s>=j;s--){   
+            document.write("&nbsp;&nbsp");
+            // &nbsp count two time space
+        } 
+       for(var i=1;i<=j;i++){
+           document.write('*'+"&nbsp;&nbsp");  
+       }
+       document.write('<br>');
+   }
+// pyramid pattern using loop
+//        *  
+//       *  *  
+//     *  *  *  
+//    *  *  *  *  
+//   *  *  *  *  *  
+</script>
+</html>

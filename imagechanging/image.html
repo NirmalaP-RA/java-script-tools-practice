@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image changing using This function</title>
+</head>
+<style>
+    .main{
+        width: 750px;
+        margin: auto;
+    }
+    img {
+        margin: auto;
+        margin-right: 12px;
+        /* margin: 0px 6px 0px 5px; */
+    }
+</style>
+<body>
+    <div class="main">
+        <img src="../imagechanging/img/1.jpg" alt="" id="img1" width="750" height="500">
+        <!-- how to identify which img is clicked so this keyword use to get it to function -->
+        <img src="../imagechanging/img/3.jpg" onmouseover="changeImg(this)" alt="" width="23%">
+        <img src="../imagechanging/img/4.jpg" onmouseover="changeImg(this)" alt="" width="23%">
+        <img src="../imagechanging/img/ourwork1.jpg" onmouseover="changeImg(this)" alt="" width="23%" height="130px">
+        <img src="../imagechanging/img/the-town-bg-01.jpg" onmouseover="changeImg(this)" alt="" width="23%"  height="130px">
+    </div>
+</body>
+<script>
+    var img1=document.querySelector("#img1");
+
+  function changeImg(currentImg){
+// console.log(currentimg)
+var currentImgSrc=currentImg.src;
+
+// console.log(currentImgSrc)
+img1.src=currentImgSrc;
+
+  }
+</script>
+</html>

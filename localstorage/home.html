@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local storage(window object)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- except string or data made by character if you want to save object on window which is type of array or contain anoter type of data you need json  -->
+     <!-- json:java script object notation -->
+      <!-- json is type of string which you can save on browser -->
+      <!-- type of browser storage:local storage,session storage,cookie -->
+       <!-- type of local storage:json.stringfy(),json.parse(),setitem(),getitem(),removeitem(),clear() -->
+   <form action="">
+    <h3>Enquiry Form</h3>
+    <div>
+      <input type="text" name="uname" placeholder="Enter Name">
+    </div>
+    <div>
+       <input type="email" name="email" placeholder="Enter Email"> 
+    </div>
+    <div>
+        <input type="tel" name="phone" placeholder="Enter phone">
+    </div>
+    <div>
+        <button>Save</button>
+    </div>
+   </form>
+   <div class="clear">
+    <button id="clearbtn">Clear All</button>
+   </div>
+   <table border="1px">
+     <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Delete</th>
+            <th>Edit</th>
+        </tr>
+     </thead>
+    <tbody>
+
+    </tbody>
+   </table>
+</body>
+<script src="../localstorage/form.js"></script>
+</html>

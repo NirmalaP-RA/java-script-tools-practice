@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data swapping in java script</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .main{
+        width: 1320px;
+        color: white;
+        background-color: orange;
+        border: 1px solid purple;
+        margin: 100px auto;
+    }
+    .outer{
+        display: flex;
+    }
+    .innerdiv1{
+        border: 1px solid purple;
+        text-align: center;
+        background-color: blue;
+        padding: 40px;
+        margin: 40px;
+        flex-basis: 40%;
+    }
+    .innerdiv2{
+        border: 1px solid purple;
+        text-align: center;
+        background-color: blue;
+        padding: 40px;
+        margin: 40px;
+        flex-basis: 40%;
+    }
+    button{
+        width: 60px;
+        height: 30px;
+        background-color:blue ;
+        color: white;
+        border: 0px;
+        border-radius: 8px;
+        display: table;
+        margin: auto;
+       margin-bottom: 15px;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="outer">
+                <div class="innerdiv1" id="leftcontent">1Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus fugit voluptate, excepturi ut quam ipsum?</div>
+                <div class="innerdiv2" id="rightcontent">2Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita officiis consequatur eaque consequuntur soluta autem harum a, excepturi pariatur repellat!</div>
+        </div>
+        <div><button onclick="DataSwap()">SWAP</button></div>
+    </div>
+   
+</body>
+<script>
+    var innerdiv1=document.getElementById('leftcontent');
+    var innerdiv2=document.getElementById('rightcontent');
+ function DataSwap(){
+    
+    // data get
+    var leftContentData=innerdiv1.innerText;
+    var rightContentData=innerdiv2.innerText;
+    // console.log(leftContentData);
+    // console.log(rightContentData);
+
+    //  data set
+        innerdiv1.innerText=rightContentData;
+        innerdiv2.innerText=leftContentData;
+ }
+</script>
+</html>

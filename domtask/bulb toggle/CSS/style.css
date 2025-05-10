@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.row{
+    padding-top: 200px;
+    margin: auto;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+button{
+    border: 0px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 15px 20px;
+}

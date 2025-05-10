@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    list-style: none;
+}
+.main{
+    width: 400px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    border-radius: 8px;
+   
+}
+#userInp{
+    width: 70%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+#taskbtn{
+    padding: 8px 10px;
+    background: greenyellow;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+}
+#task-list li{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    font-size: 20px;
+}
+#task-list li button{
+    padding: 2px 8px;
+    background: red;
+    border: none;
+    border-radius: 4px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Color Generator</title>
+</head>
+
+<body style="background: rgb(99,255,255);">
+    <!-- /*  logic to implement is color will change by changing rgb value */ -->
+   <button>Random Color</button> 
+</body>
+<script>
+    // we use mathlibrary
+    // var randomColor=math.random();
+    // it will on run 0 to one by default so it will create a problem because we want 3 color value to we want 0 to 255 value can be change to get more color
+    // var randomColor=math.random()*255;
+    // we use math.floor() this can send you to get back vaue and remove value after point
+    // logic to generate random color
+    
+    // console.log(randomColor);
+    var btn=document.querySelector("button");
+    var body=document.querySelector("body");
+    btn.addEventListener("click",()=>{
+        var randomColorRed=Math.floor(Math.random()*255);
+        var randomColorGreen=Math.floor(Math.random()*255);
+        var randomColorBlue=Math.floor(Math.random()*255);
+
+        // css task perform
+        body.style.background=`rgb(${randomColorRed},${randomColorGreen},${randomColorBlue})`;
+    })
+</script>
+</html>

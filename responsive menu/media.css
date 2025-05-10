@@ -1,0 +1,29 @@
+@media only screen  and (min-width:200px) and (max-width:567px){
+    header{
+        display: flex;
+        /* flex-direction: column; */
+        align-items: stretch;
+        padding: 0px 15px;
+    }
+    nav{
+        position: fixed;
+        width: 80%;
+        height: 100vh;
+        top:0px;
+        left: -100%;
+        background-color: blue;
+        transition: 0.5s;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li a{
+        color: white !important;
+    }
+    .micon{
+        display: block;
+    }
+    .showMenu{
+        left: 0% !important;
+    }
+}
