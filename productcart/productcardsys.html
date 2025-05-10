@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cart System:Quantity Increase/Decrease</title>
+</head>
+<style>
+   .productimg{
+   margin-left: 35%;
+   }
+.product{
+    text-align: center;
+}
+.counter{
+    text-align: center;
+}
+</style>
+<body>
+    <div class="main">
+        <div class="productimg">
+            <img src="../imagechanging/img/3.jpg" alt="">
+        </div>
+        <div class="product">
+            <div>
+                Product Name:T.V
+            </div>
+            <div>
+                Price:21000
+            </div>
+        </div>
+        <div class="counter">
+        <button id="add">+</button>
+        <button id="btn">0</button>
+        <button id="min">-</button>
+        </div>
+    </div>
+</body>
+<script>
+ var addbtn=document.getElementById("add");
+ var minbtn=document.getElementById("min");
+ var btn=document.getElementById("btn");
+ 
+ addbtn.addEventListener("click",()=>{
+    minbtn.disabled=false;
+    var oldData=Number(btn.innerText);
+    if(oldData<5){
+        btn.innerText=oldData+1
+    }
+    else{
+        addbtn.disabled=true;
+    }
+ })
+
+ minbtn.addEventListener("click",()=>{
+    addbtn.disabled=true;
+    var oldData=Number(btn.innerText);
+    if(oldData>0){
+        btn.innerText=oldData-1
+    }
+    else{
+        minbtn.disabled=true;
+    }
+ })
+</script>
+</html>
